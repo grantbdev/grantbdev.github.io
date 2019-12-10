@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% feed_meta %}
+  {% seo %}
+  <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
+      <img alt="My face" src="{{ site.logo | relative_url }}" style="max-width: 100px;" />
+      <p>{{ site.description | default: site.github.project_tagline }}</p>
+      <p>
+        <a href="{{ "/feed.xml" | relative_url }}">
+          <img alt="Feed" src="{{ "/assets/img/feed.png" | relative_url}}" style="max-height: 44px;" />
+        </a>
+        <a href="{{ site.github.owner_url }}">
+          <img alt="GitHub Profile" src="{{ "/assets/img/github.png" | relative_url}}" style="max-height: 44px;" />
+        </a>
+        <a href="{{ site.linkedin_url }}">
+          <img style="max-height: 44px;" alt="LinkedIn Profile" src="{{ "/assets/img/linkedin.png" | relative_url}}" />
+        </a>
+      </p>
+    </header>
+    <section>
+      {{ content }}
+    </section>
+    <footer>
+      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
