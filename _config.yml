@@ -1,0 +1,9 @@
+description: Read, write, delete, repeat.
+logo: /assets/img/logo.jpg
+linkedin_url: https://www.linkedin.com/in/grantbourque/
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+theme: jekyll-theme-minimal
+title: Grant Bourque
